@@ -1,0 +1,41 @@
+package Day1;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+import org.hibernate.service.ServiceRegistryBuilder;
+
+public class RankingTest {
+	
+	SessionFactory factory;
+
+	public void setup(){
+		Configuration configuration = new Configuration();
+		configuration.configure();
+		
+		ServiceRegistryBuilder srb = new ServiceRegistryBuilder();
+		srb.applySettings(configuration.getProperties());
+		
+		ServiceRegistry serviceRegistry = srb.buildServiceRegistry();
+		factory = configuration.buildSessionFactory(serviceRegistry);		
+		
+	}
+	
+	public void saveStudent(Session session, String name){
+		Student s = new Student();
+		s.setName(name);
+		session.save(s);
+	}
+	
+	public void createData(Session session, String subjectName, String observerName, String skillName, int rank){
+		Student subject = 
+	}
+
+	public static void main(String[] args) {
+		RankingTest rt = new RankingTest();
+		rt.setup();
+
+	}
+
+}
