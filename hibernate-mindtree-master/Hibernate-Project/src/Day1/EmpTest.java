@@ -27,19 +27,19 @@ public class EmpTest {
 		EmpTest et = new EmpTest();
 		et.setup();
 		
-//		Session session = et.factory.openSession();
-//		
-//		Transaction tx = session.beginTransaction();
-//		
-//		Employee e = new Employee("Awantik");
-//		session.save(e);
-//		Employee f = new Employee("Aabcdef");
-//		session.save(f);
-//		
-//		tx.commit();
-//		
-//		session.close();
-//		
+		Session session = et.factory.openSession();
+		
+		Transaction tx = session.beginTransaction();
+		
+		Employee e = new Employee("Awantik");
+		session.save(e);
+		Employee f = new Employee("Aabcdef");
+		session.save(f);
+		
+		tx.commit();
+		
+		session.close();
+		
 		
 		
 

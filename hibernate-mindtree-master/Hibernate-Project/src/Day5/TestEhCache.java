@@ -19,7 +19,7 @@ public class TestEhCache {
 		Configuration configuration = new Configuration();
 		configuration.configure("hibernate.cfg.xml");
 		
-		ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
+		ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry();
 		tec.sessionFactory = configuration.buildSessionFactory(serviceRegistry);
 		
 		SessionFactory sf = tec.sessionFactory;
