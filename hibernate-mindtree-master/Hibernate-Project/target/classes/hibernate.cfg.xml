@@ -14,10 +14,10 @@
 
    
    <property name="show_sql">true</property>
-   <property name="hbm2ddl.auto">update</property>
+   <property name="hbm2ddl.auto">create</property>
    <property name="hibernate.connection.autocommit">false</property>
 
-   <mapping class="Day6.Student"/>
+   <mapping class="Day7.Employee"/>
 
 </session-factory>
 </hibernate-configuration>
