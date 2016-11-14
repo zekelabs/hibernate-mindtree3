@@ -3,9 +3,6 @@ Topics
 1. HCQL
 2. Caching
 3. Custom Annotation
-4. Interceptors
+4. Criteria
+5. JPA
 
-
-5. Criteria
-6. JPA
-7. Spring/Hibernate integration
